@@ -1,3 +1,3 @@
-module github.com/jordanchude/build-redis
+module build-redis
 
 go 1.21.7

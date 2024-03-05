@@ -13,3 +13,7 @@ func NewDatastore() *Datastore {
 func (ds *Datastore) Set(key, value string) {
 	ds.store[key] = value
 }
+
+func (ds *Datastore) Get(key string) string {
+	return ds.store[key]
+}
