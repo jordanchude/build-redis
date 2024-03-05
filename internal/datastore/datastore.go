@@ -1,11 +1,15 @@
 package datastore
 
-type datastore struct {
+type Datastore struct {
 	store map[string]string
 }
 
-func newDatastore() *Datastore {
-	return &Datastore {
-		store: make(make[string]string)
+func NewDatastore() *Datastore {
+	return &Datastore{
+		store: make(map[string]string),
 	}
+}
+
+func (ds *Datastore) Set(key, value string) {
+	ds.store[key] = value
 }

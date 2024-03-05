@@ -1,6 +1,10 @@
 package datastore
 
-import "testing"
+import (
+	"testing"
+
+	. "github.com/jordanchude/build-redis/internal/datastore"
+)
 
 func TestSet(t *testing.T) {
 	ds := NewDatastore()
